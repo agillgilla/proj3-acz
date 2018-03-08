@@ -129,7 +129,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <circ-port height="10" pin="690,150" width="10" x="105" y="45"/>
       <circ-port height="10" pin="780,150" width="10" x="115" y="45"/>
       <circ-port height="10" pin="870,150" width="10" x="125" y="45"/>
-      <circ-port height="8" pin="20,760" width="8" x="136" y="46"/>
       <circ-anchor facing="east" height="6" width="6" x="147" y="77"/>
     </appear>
     <wire from="(680,280)" to="(680,290)"/>
@@ -487,9 +486,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(20,760)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
     <comp lib="0" loc="(580,590)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="write_en"/>
@@ -525,7 +521,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="t1_val"/>
     </comp>
     <comp lib="0" loc="(170,600)" name="Tunnel">
-      <a name="label" val="write_zero"/>
+      <a name="label" val="write_x0"/>
     </comp>
     <comp lib="0" loc="(170,690)" name="Tunnel">
       <a name="label" val="write_t0"/>
@@ -805,6 +801,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="select" val="5"/>
       <a name="width" val="32"/>
     </comp>
+    <comp lib="0" loc="(20,760)" name="Constant"/>
     <comp lib="1" loc="(380,600)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
