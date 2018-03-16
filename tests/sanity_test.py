@@ -41,7 +41,11 @@ class TestCase():
             if debug:
                 print("nul dir works!")
         except Exception as e:
+<<<<<<< HEAD
             print("The no nul directories. Program will most likeley error now.")
+=======
+            print("The no nul directories. Program will most likely error now.")
+>>>>>>> 9c92e8940b07968883eaeb7d7737776388f835ca
     proc = subprocess.Popen(["java","-jar",logisim_location,"-tty","table",self.circfile],
                             stdin=stdinf,
                             stdout=subprocess.PIPE)
