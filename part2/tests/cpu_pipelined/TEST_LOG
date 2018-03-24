@@ -1,0 +1,15 @@
+	sanity FAILED test: Pipelined CPU add/lui/sll test
+	sanity FAILED test: Pipelined CPU memory test
+	sanity FAILED test: Pipelined CPU branch test
+	sanity FAILED test: Pipelined CPU jump test
+	sanity FAILED test: Pipelined CPU swge test
+	sanity FAILED test: Pipelined CPU br_jalr test
+
+
+sanity: 0/6 (0/6 tests passed, 0 partially)
+	Failed test "Pipelined CPU add/lui/sll test" worth 1 points. Reason: Did not match expected output
+	Failed test "Pipelined CPU memory test" worth 1 points. Reason: Did not match expected output
+	Failed test "Pipelined CPU branch test" worth 1 points. Reason: Did not match expected output
+	Failed test "Pipelined CPU jump test" worth 1 points. Reason: Did not match expected output
+	Failed test "Pipelined CPU swge test" worth 1 points. Reason: Did not match expected output
+	Failed test "Pipelined CPU br_jalr test" worth 1 points. Reason: Did not match expected output
