@@ -293,6 +293,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(530,310)" to="(530,330)"/>
     <wire from="(880,450)" to="(900,450)"/>
     <wire from="(460,650)" to="(550,650)"/>
+    <wire from="(220,420)" to="(250,420)"/>
     <wire from="(690,470)" to="(690,510)"/>
     <wire from="(420,220)" to="(450,220)"/>
     <wire from="(530,340)" to="(550,340)"/>
@@ -408,7 +409,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(410,470)" to="(410,510)"/>
     <wire from="(450,310)" to="(460,310)"/>
     <wire from="(480,340)" to="(490,340)"/>
-    <wire from="(240,420)" to="(250,420)"/>
     <wire from="(690,470)" to="(700,470)"/>
     <wire from="(530,310)" to="(540,310)"/>
     <wire from="(940,170)" to="(990,170)"/>
@@ -488,9 +488,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(320,410)" name="Tunnel">
       <a name="width" val="32"/>
       <a name="label" val="fetch_addr"/>
-    </comp>
-    <comp lib="3" loc="(290,410)" name="Divider">
-      <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(830,170)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -665,10 +662,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="32"/>
       <a name="label" val="imm"/>
     </comp>
-    <comp lib="0" loc="(240,420)" name="Constant">
-      <a name="width" val="32"/>
-      <a name="value" val="0x4"/>
-    </comp>
     <comp lib="0" loc="(800,480)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="width" val="4"/>
@@ -708,6 +701,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(540,310)" name="Tunnel">
       <a name="width" val="32"/>
       <a name="label" val="s0"/>
+    </comp>
+    <comp lib="0" loc="(220,420)" name="Constant">
+      <a name="width" val="5"/>
+      <a name="value" val="0x2"/>
     </comp>
     <comp lib="0" loc="(140,430)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -772,6 +769,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="t1 Value"/>
       <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="3" loc="(290,410)" name="Shifter">
+      <a name="width" val="32"/>
+      <a name="shift" val="lr"/>
     </comp>
     <comp lib="0" loc="(1010,170)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -1403,6 +1404,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(370,920)" to="(400,920)"/>
     <wire from="(480,230)" to="(510,230)"/>
     <wire from="(490,320)" to="(520,320)"/>
+    <wire from="(480,710)" to="(510,710)"/>
     <wire from="(440,440)" to="(460,440)"/>
     <wire from="(440,360)" to="(460,360)"/>
     <wire from="(470,240)" to="(480,240)"/>
@@ -1507,6 +1509,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1000,460)" to="(1020,460)"/>
     <wire from="(190,350)" to="(280,350)"/>
     <wire from="(470,560)" to="(500,560)"/>
+    <wire from="(480,650)" to="(510,650)"/>
     <wire from="(710,280)" to="(710,440)"/>
     <wire from="(240,550)" to="(240,590)"/>
     <wire from="(490,510)" to="(510,510)"/>
@@ -1742,6 +1745,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
       <a name="label" val="BrLt"/>
+    </comp>
+    <comp lib="0" loc="(480,650)" name="Constant">
+      <a name="value" val="0x0"/>
     </comp>
     <comp loc="(120,370)" name="InstIdentifier"/>
     <comp lib="0" loc="(400,380)" name="Tunnel">
@@ -2428,6 +2434,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="1" loc="(870,440)" name="Controlled Buffer">
       <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(480,710)" name="Constant">
+      <a name="value" val="0x0"/>
     </comp>
     <comp lib="0" loc="(370,920)" name="Tunnel">
       <a name="facing" val="east"/>
